@@ -1,0 +1,18 @@
+﻿using ASP.NET_MVC_Homework.Data;
+using Microsoft.AspNetCore.Mvc;
+
+namespace ASP.NET_MVC_Homework.Controllers
+{
+    public class AboutController : Controller
+    {
+        private readonly AppDbContext _context;
+        public AboutController(AppDbContext context)
+        {
+            _context = context;
+        }
+        public IActionResult Index()
+        {
+            return View();
+        }
+    }
+}
